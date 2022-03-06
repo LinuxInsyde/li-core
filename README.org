@@ -1,0 +1,25 @@
+#+TITLE: li-pacman
+#+AUTHOR: LinuxInsyde
+#+EMAIL: linuxinsyde@outlook.com
+
+* Table of Contents :toc:
++ [[Why not the AUR]]
++ [[Enabling this repository]]
+
+* Why not the AUR
+The obvious question is "Why don't I just use the AUR". Because using a pacman
+repository is easier than using an AUR helper
+
+* Enabling this repository
+To enable this repository, add the following to your =/etc/pacman.conf= file
+
+#+BEGIN_SRC conf
+[li-pacman]
+SigLevel = Optional DatabaseOptional
+Server = https://raw.githubusercontent.com/LinuxInsyde/$repo/main/$arch
+#+END_SRC
+
+Then, run a simple
+#+BEGIN_SRC bash
+sudo pacman -Sy
+#+END_SRC
