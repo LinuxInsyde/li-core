@@ -1,4 +1,4 @@
-#+TITLE: li-pacman
+#+TITLE: li-core
 #+AUTHOR: LinuxInsyde
 #+EMAIL: linuxinsyde@outlook.com
 * Why not the AUR
@@ -9,7 +9,7 @@ repository is easier than using an AUR helper
 To enable this repository, add the following to your =/etc/pacman.conf= file
 
 #+BEGIN_SRC conf
-[li-pacman]
+[li-core]
 SigLevel = Optional DatabaseOptional
 Server = https://raw.githubusercontent.com/LinuxInsyde/$repo/main/$arch
 #+END_SRC
